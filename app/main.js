@@ -13,10 +13,20 @@ function addEventListeners(){
 }
 
 function prevSlide(){
-    showVideoSlide(slideIndex -= 1);
+   showVideoSlide(slideIndex -= 1);
+   slides[slideIndex-1].classList.add("exitRight");
+
+   setInterval(()=>{
+   slides[slideIndex-1].classList.remove("exitRight");
+   },800)
 }
 function nextSlide() {
    showVideoSlide(slideIndex += 1);
+   slides[slideIndex-1].classList.add("exitLeft");
+
+   setInterval(()=>{
+      slides[slideIndex-1].classList.remove("exitLeft");
+   },800)
 }
 function showVideoSlide(n) {   
 
@@ -29,6 +39,7 @@ function showVideoSlide(n) {
       slides[i].style.display="none";
    }
 
-   slides[slideIndex-1].style.display = "block";
+   slides[slideIndex-1].style.display = "block";   
 }
+
 
