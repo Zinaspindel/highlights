@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="sliderControllers.css">
+      <link rel="stylesheet" href="animations.css">
+      <title>NBA highlights</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="videoContainer">
+
+            <div class="arrowContainer left">
+               <a class="arrow prev" ></a>
+            </div>
+            <div class="arrowContainer right">
+               <a class="arrow next" ></a> 
+            </div>
+
+            <div class="videoSlide slideEnter initial">
+               <img class="playButton buttonAnimation" src="assets/icon/playbutton.png" alt="">
+            <video autoplay loop muted=true>
+               <source src="assets/media/BullsVsLakers.mp4">
+            </video>
+            <div class="videoDescription">
+               <div class="videoNumber numberDivAnimation">
+                  <p class="number numberAnimation">01</p>
+               </div>
+               <div class="videoBrief briefAnimation">
+                  <p class="brief">LeBron James had 28 points, seven rebounds and seven assists,</p>
+                  <p class="brief">  and the Los Angeles Lakers overcame the absence of two injured starters</p>
+               </div>
+            </div>
+            </div>
+
+            <div class="videoSlide slideEnter">
+               <img class="playButton buttonAnimation" src="assets/icon/playbutton.png" alt="">
+               <video autoplay loop muted=true>
+                  <source src="assets/media/ClippersVsWarriors.mp4">
+               </video>
+               <div class="videoDescription">
+                  <div class="videoNumber numberDivAnimation">
+                     <p class="number numberAnimation">02</p>
+                  </div>
+                  <div class="videoBrief briefAnimation">
+                     <p class="brief"> The Warriors trailed by 21 late in the third quarter but Curry scored 19 in that</p>
+                     <p class="brief"> period and pulled Golden State within six entering the fourth.</p>
+                  </div>
+               </div>
+            </div>
+           
+         </div>
+         <div class="slidesController">
+            <button class="controllerButton moveLeft" type="button">Scale / Move Left</button>
+            <button class="controllerButton moveRight" type="button">Scale / Move Right</button>
+         </div>
+      </div>
+      <script src="app/main.js"></script>
+   </body>
+</html>

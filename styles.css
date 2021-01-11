@@ -1,0 +1,82 @@
+.container{
+    padding-top: 28px;
+    width: 100%;
+    height: 800px;
+}
+.videoContainer{
+    overflow: hidden;
+    position: relative;
+    width: 1150px;
+    height: 645px;
+    margin: auto;
+    z-index: 0;
+}
+.videoSlide{
+    width: 100%;
+    height: 100%;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+.videoDescription {
+    position: absolute;
+    bottom:30px;
+    left:35px;
+    width: 80%;;
+    height: 80px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.videoNumber{
+    color: white;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    line-height: 2px;
+    background-color: rgb(95, 212, 248);
+    width:10%;
+}
+.videoBrief{
+    background-color: rgba(0, 0, 0, 0.705);
+    width: 850px;
+    height: 80px;
+    font-size: 22px;
+    line-height: 25px;
+    color:white;
+
+    overflow: hidden;
+    white-space: nowrap;  
+}
+p.brief {
+    margin: 10px 0 0 10px;
+}
+.slideEnter {
+    animation-duration: 0.7s;
+    animation-name: enter;
+}
+.playButton {
+    position: absolute;
+    left: 500px;
+    top: 250px;
+    height: 120px;
+    width: 120px;
+    color:white;
+}
+.buttonAnimation {
+    animation-duration: 15s;
+    animation-name: buttonAppear;
+}
+.numberAnimation {
+    animation-duration: 15s;
+    animation-name: numberAnimation;
+}
+.numberDivAnimation {
+    animation-name: numberDivAppear;
+    animation-duration: 15s;
+}
+.briefAnimation {
+    animation-name: briefApper;
+    animation-duration: 15s;
+}
+
