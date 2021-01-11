@@ -1,13 +1,11 @@
 .container{
     padding-top: 28px;
     width: 100%;
-    height: 800px;
+    height: 500px;
 }
 .videoContainer{
-    overflow: hidden;
     position: relative;
-    width: 1150px;
-    height: 645px;
+    width: 800px;
     margin: auto;
     z-index: 0;
 }
@@ -23,33 +21,32 @@ video{
     position: absolute;
     bottom:30px;
     left:35px;
-    width: 80%;;
-    height: 80px;
+    width: 90%;;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
 .videoNumber{
     color: white;
-    font-size: 40px;
-    font-weight: 200;
+    font-size: 20px;
     text-align: center;
     line-height: 2px;
     background-color: rgb(95, 212, 248);
     width:10%;
 }
+p.number {
+    padding-top: 10px;
+}
 .videoBrief{
     background-color: rgba(0, 0, 0, 0.705);
-    width: 850px;
-    height: 80px;
-    font-size: 22px;
-    line-height: 25px;
+    width: 100%;
+    font-size: 18px;
     color:white;
 
     overflow: hidden;
     white-space: nowrap;  
 }
 p.brief {
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 5px;
 }
 .slideEnter {
     animation-duration: 0.7s;
@@ -57,10 +54,10 @@ p.brief {
 }
 .playButton {
     position: absolute;
-    left: 500px;
-    top: 250px;
-    height: 120px;
-    width: 120px;
+    left: 350px;
+    top: 170px;
+    height: 100px;
+    width: 100px;
     color:white;
 }
 .buttonAnimation {
